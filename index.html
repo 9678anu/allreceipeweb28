@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allrecipes Tech Support</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #F28C38; /* Orange theme */
+            color: #fff;
+        }
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .section h2 {
+            color: #F28C38; /* Orange for headers */
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .call-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #F28C38; /* Orange button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 2px solid #F28C38; /* Blue border */
+            transition: transform 0.2s, background-color 0.3s;
+            font-weight: bold;
+            gap: 8px;
+        }
+        .call-button:hover {
+            background-color: #F28C38; /* Blue on hover */
+            transform: scale(1.05);
+        }
+        .call-button svg {
+            width: 18px;
+            height: 18px;
+            fill: #fff;
+        }
+        .fixed-call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #F28C38; /* Orange button */
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #F28C38; /* Blue border */
+            animation: ring 1.5s ease-in-out infinite; /* Ring animation */
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .fixed-call-button:hover {
+            background-color: #F28C38; /* Blue on hover */
+            transform: scale(1.1);
+        }
+        .fixed-call-button svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+        @keyframes ring {
+            0% { transform: scale(1) rotate(0deg); }
+            10% { transform: scale(1.05) rotate(5deg); }
+            20% { transform: scale(1.05) rotate(-5deg); }
+            30% { transform: scale(1.05) rotate(5deg); }
+            40% { transform: scale(1.05) rotate(-5deg); }
+            50% { transform: scale(1) rotate(0deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .call-button {
+                width: 100%;
+                justify-content: center;
+            }
+            .fixed-call-button {
+                padding: 12px;
+            }
+            .fixed-call-button svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://images.squarespace-cdn.com/content/v1/57a7ec9415d5db4d0a5cd06f/1560918025300-6EEW0JWA10F2GJEYX12W/allrecipes.png" alt="Allrecipes Logo">
+        <!-- <h1>Allrecipes Tech Support</h1> -->
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Welcome to Allrecipes Tech Support</h2>
+            <p>At Allrecipes, we believe food connects us. Whether you are discovering new dishes, sharing your family’s treasured recipes, or exploring cuisines from around the world, we want your experience to be seamless, enjoyable, and inspiring.</p>
+            <p>Our dedicated support team is here to assist you with any technical challenges, account concerns, or platform questions. We are committed to helping you make the most of every moment spent with us.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Account and Login Help</h2>
+            <p>Accessing your account is the first step to joining our community of home cooks, food lovers, and recipe creators.</p>
+            <ul>
+                <li>Forgot your password? Reset it anytime through our Forgot Password page to regain access.</li>
+                <li>Can’t log in? Double-check your email and password, clear your browser cache, or attempt to reset your login credentials.</li>
+                <li>Update account details such as your email address, username, or profile image through your account settings.</li>
+                <li>Want to delete or deactivate your account? Visit our help section for clear, step-by-step instructions.</li>
+            </ul>
+            <p>Our support team is here to ensure that no matter what account challenge you face, you will always have a clear path forward.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0izou 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Customer Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Recipes, Photos, and Community Contributions</h2>
+            <p>We love seeing the creativity and passion our community brings to the table.</p>
+            <ul>
+                <li>Submit your own recipes, complete with ingredient lists, detailed instructions, and personal notes.</li>
+                <li>Upload photos of your culinary creations to showcase your skills and inspire others.</li>
+                <li>Write thoughtful reviews and ratings to help fellow cooks make informed choices.</li>
+                <li>Edit or update your submissions anytime — we know your kitchen experiments evolve, and your recipes can too.</li>
+            </ul>
+            <p>Our platform thrives because of contributors like you who share their unique tastes and stories.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Helpdesk Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Using Allrecipes on Mobile Devices</h2>
+            <p>The Allrecipes app brings our entire kitchen to your fingertips.</p>
+            <ul>
+                <li>Download the app on iOS or Android to browse recipes, save favorites, and access your shopping list from anywhere.</li>
+                <li>Sync your account across devices to keep all your saved recipes and meal plans connected.</li>
+                <li>Troubleshoot mobile issues by ensuring your app is updated, clearing the app cache, or reinstalling.</li>
+                <li>Report any bugs or technical concerns directly through the app’s Help & Support section.</li>
+            </ul>
+            <p>We want you to enjoy a consistent experience, whether you’re at home or on the go.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Personalizing Your Allrecipes Experience</h2>
+            <p>Every cook has unique needs and tastes — we help you customize the platform to match.</p>
+            <ul>
+                <li>Save recipes to personalized collections or folders for easy access.</li>
+                <li>Adjust serving sizes and ingredient quantities on recipes to fit your household.</li>
+                <li>Create meal plans tailored to your schedule, with automatic shopping list generation.</li>
+                <li>Filter recipe searches based on dietary preferences such as vegetarian, vegan, gluten-free, or keto.</li>
+            </ul>
+            <p>Our goal is to empower you to cook confidently, creatively, and conveniently.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Customer Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Nutrition, Ingredients, and Dietary Information</h2>
+            <p>Making informed choices in the kitchen starts with accurate information.</p>
+            <ul>
+                <li>View detailed nutrition facts, including calories, macronutrients, and key vitamins, on most recipes.</li>
+                <li>Get substitution suggestions for common ingredients to match dietary needs or pantry availability.</li>
+                <li>Understand potential allergens — while we strive for accuracy, always review ingredient lists carefully if you have allergies or sensitivities.</li>
+            </ul>
+            <p>We believe that cooking is for everyone, and we aim to provide the tools you need to cook safely and happily.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Helpdesk Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Shopping Lists and Meal Planning Tools</h2>
+            <p>Simplify your kitchen tasks with our integrated tools.</p>
+            <ul>
+                <li>Add ingredients directly to shopping lists from your saved recipes.</li>
+                <li>Edit, organize, and check off items as you shop, either online or in-store.</li>
+                <li>Sync lists across devices so you’re always prepared, whether on mobile or desktop.</li>
+                <li>Print or share shopping lists with family or friends to make meal preparation a team effort.</li>
+            </ul>
+            <p>Our meal planning tools are designed to save you time, reduce stress, and keep your meals organized.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Troubleshooting and Technical Assistance</h2>
+            <p>Technical hiccups happen, but we are here to help resolve them quickly.</p>
+            <ul>
+                <li>Slow website performance? Try clearing your browser cache, updating your browser, or using a different browser.</li>
+                <li>App not functioning properly? Ensure you have the latest version installed, clear the app’s cache, or reinstall.</li>
+                <li>Broken links, missing images, or page errors? Report them to our tech team so we can investigate and resolve them.</li>
+                <li>Account sync issues? Double-check that you are logged in and connected to a stable internet connection.</li>
+            </ul>
+            <p>We are dedicated to providing prompt, effective support for any technical challenges you encounter.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Customer Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Community Support, Guidelines, and Safety</h2>
+            <p>Allrecipes is a place for positive, respectful, and constructive engagement.</p>
+            <ul>
+                <li>Familiarize yourself with our community guidelines to ensure a welcoming environment for all users.</li>
+                <li>Report inappropriate content, offensive comments, or abusive behavior using the report features on the platform.</li>
+                <li>Participate in forums and comment sections to exchange ideas, share tips, and learn from others.</li>
+                <li>Celebrate diversity by engaging with cooks and recipes from different backgrounds, cultures, and cuisines.</li>
+            </ul>
+            <p>We are proud to foster a community where every cook feels valued and supported.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Helpdesk Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Contact Allrecipes Support</h2>
+            <p>When you need more help, we are just a message away.</p>
+            <ul>
+                <li>Browse our Help Center for FAQs, guides, and detailed articles on common issues.</li>
+                <li>Submit a detailed support request through our online form — we aim to respond within 1–2 business days.</li>
+                <li>Stay informed by following Allrecipes on social media or subscribing to our newsletter for platform updates, tips, and news.</li>
+            </ul>
+            <p>Your feedback drives our improvements, and we are here to listen.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Online Safety and Best Practices</h2>
+            <p>Protecting your personal information and account is essential.</p>
+            <ul>
+                <li>Use strong, unique passwords and change them regularly.</li>
+                <li>Never share your login details or personal information with unverified sources.</li>
+                <li>Be cautious of phishing emails or fake websites impersonating Allrecipes.</li>
+                <li>Always log out from shared or public devices.</li>
+                <li>Keep your app, browser, and devices updated with the latest security patches.</li>
+            </ul>
+            <p>By following these practices, you help ensure a secure and enjoyable experience.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Customer Allrecipes Support
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Legal Disclaimer</h2>
+            <p>Allrecipes Tech Support is provided exclusively through official Allrecipes channels. We do not partner with or endorse third-party services claiming to offer account recovery, technical support, or troubleshooting assistance. Using unofficial services may expose you to data privacy risks.</p>
+            <p>By using the Allrecipes platform, you agree to our Terms of Use, Privacy Policy, and Community Guidelines.</p>
+            <a href="tel:+18335341986" class="call-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Helpdesk Support
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Allrecipes, A Meredith Corporation Brand. All Rights Reserved.</p>
+    </div>
+
+    <a href="tel:+18335341986" class="fixed-call-button">
+        <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+        </svg>
+    </a>
+</body>
+</html>
